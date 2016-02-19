@@ -1,0 +1,14 @@
+
+-
+   name: 'Contest'
+   uriPattern: 'contest/@action'
+
+-
+   name: 'Contest Details'
+   uriPattern: 'contest/{contest}'
+   defaults:
+     '@action':     'show'
+   routeParts:
+     contest:
+       objectType: '\ARM\Armcontest\Domain\Model\Contest'
+       uriPattern: '{name}'

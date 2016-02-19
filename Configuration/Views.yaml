@@ -1,0 +1,4 @@
+-
+  options:
+    partialRootPaths: 
+      'ARM.Armcontest/Partials': 'resource://ARM.Armcontest/Private/Partials'

@@ -1,0 +1,16 @@
+ 
+-
+   name: 'Artwork'
+   uriPattern: 'artworks/@action'
+
+-
+   name: 'Artwork Detail'
+   uriPattern: 'artworks/{artwork}'
+   defaults:
+     '@action':     'show'
+   routeParts:
+     artwork:
+       objectType: '\ARM\Armcontest\Domain\Model\Artwork'
+       uriPattern: '{name}'
+
+

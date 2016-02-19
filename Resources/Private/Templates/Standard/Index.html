@@ -1,15 +1,10 @@
 <f:layout name="Default" />
 
-<f:section name="Title">Index view of Standard controller</f:section>
+<f:section name="Title">ArmContest: Homepage</f:section>
 
 <f:section name="Content">
-    <h1>A freshly created Fluid template!</h1>
-    <p>Some data set by the controller:</p>
-    <ul>
-        
-        <f:for each="{foos}" as="foo">
-            <li>{foo}</li>
-        </f:for>
-        
-    </ul>
+    <h1>Welcome to ARM Technologies!</h1>
+    <p>Demonstration of Flow package implemented in Neos:</p>
+	<p><f:link.action action="list" controller="Artwork">List all Artworks</f:link.action></p>
+	<p><f:link.action action="list" controller="Contest">List all contests</f:link.action></p>
 </f:section>

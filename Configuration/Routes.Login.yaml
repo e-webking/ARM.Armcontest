@@ -1,0 +1,20 @@
+
+-
+  name: 'Login Form'
+  uriPattern: 'login'
+  httpMethods: ['GET']
+  appendExceedingArguments: TRUE
+    
+-
+  name: 'Authenticate'
+  uriPattern: 'authenticate'
+  defaults:
+    '@action': 'authenticate'
+    httpMethods: ['POST']
+
+-
+  name: 'Logout'
+  uriPattern: 'logout'
+  defaults:
+    '@action': 'logout'
+  httpMethods: ['GET']

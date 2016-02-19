@@ -1,0 +1,48 @@
+
+-
+  name: 'Homepage'
+  uriPattern: ''
+  defaults:
+    '@package': 'ARM.Armcontest'
+    '@controller': 'Standard'
+    '@action': 'index'
+    '@format': 'html'
+
+-
+  name: 'Login'
+  uriPattern: '<LoginSubRoutes>'
+  defaults:
+    '@package': 'ARM.Armcontest'
+    '@controller': 'Login'
+    '@action': 'index'
+    '@format': 'html'
+  subRoutes:
+    'LoginSubRoutes':
+      package: 'ARM.Armcontest'
+      suffix: 'Login'
+
+-
+   name: 'Artwork'
+   uriPattern: 'artworks/<ArtSubRoutes>'
+   defaults:
+     '@package': 'ARM.Armcontest'
+     '@controller': 'Artwork'
+     '@action': 'index'
+     '@format': 'html'
+   subRoutes:
+    'ArtSubRoutes':
+      package: 'ARM.Armcontest'
+      suffix: 'Art'
+
+-
+   name: 'Contest'
+   uriPattern: 'contest/<ContestSubRoutes>'
+   defaults:
+     '@package':    'ARM.Armcontest'
+     '@controller': 'Contest'
+     '@action': 'index'
+     '@format': 'html'
+   subRoutes:
+    'ContestSubRoutes':
+      package: 'ARM.Armcontest'
+      suffix: 'Contest'
