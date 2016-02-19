@@ -7,22 +7,14 @@
   options:
     pluginViews:
       'ContestHome':
-        label: 'Contest Home'
+        label: 'ARM Contest Home'
         controllerActions:
           'ARM\Armcontest\Controller\StandardController': ['index']
-      'ArtworkList':
-        label: 'List Artwork'
+      'Artwork':
+        label: 'Artwork'
         controllerActions:
-          'ARM\Armcontest\Controller\ArtworkController': ['index']
-      'ArtworkShow':
-         label: 'Show Artwork'
+          'ARM\Armcontest\Controller\ArtworkController': ['list', 'show']
+      'Contest':
+         label: 'Contest'
          controllerActions:
-           'ARM\Artwork\Controller\ArtworkController': ['show']
-      'ContestList':
-         label: 'List Contest'
-         controllerActions:
-           'ARM\Armcontest\Controller\ContestController': ['index']
-      'ContestShow':
-         label: 'Show Contest'
-         controllerActions:
-           'ARM\Artwork\Controller\ContestController': ['show']
+           'ARM\Armcontest\Controller\ContestController': ['list', 'show']
