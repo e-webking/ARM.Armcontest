@@ -1,13 +1,13 @@
-#                                                                        #
-# Example policy                                                       #
-#                                                                        #
-# This file contains settings for various parts of the application.      #
-# Copy this file to Settings.yaml, and adjust as necessary.              #
-#                                                                        #
-# Please refer to the default settings file(s) or the manuals for        #
-# possible configuration options.                                        #
-#                                                                        #
+privilegeTargets:
+  TYPO3\Flow\Security\Authorization\Privilege\Method\MethodPrivilege:
+    'ARM.Armcontest:StandardControllerActions':
+      matcher: 'method(ARM\Armcontest\Controller\StandardController->(index)Action())'
 
 roles:
-  ARM.Armcontest:Visitor: []
-  ARM.Armcontest:User: []
+  'TYPO3.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: 'ARM.Armcontest:StandardControllerActions'
+        permission: GRANT
+  'ARM.Armcontest:Visitor': []
+  'ARM.Armcontest:User': []

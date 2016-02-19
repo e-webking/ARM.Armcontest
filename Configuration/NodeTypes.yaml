@@ -1,0 +1,28 @@
+'ARM.Armcontest:Contest':
+  superTypes: 
+    'TYPO3.Neos:Plugin': TRUE
+  ui:
+    label: 'ARM Contest'
+    group: 'plugins'
+  options:
+    pluginViews:
+      'ContestHome':
+        label: 'Contest Home'
+        controllerActions:
+          'ARM\Armcontest\Controller\StandardController': ['index']
+      'ArtworkList':
+        label: 'List Artwork'
+        controllerActions:
+          'ARM\Armcontest\Controller\ArtworkController': ['index']
+      'ArtworkShow':
+         label: 'Show Artwork'
+         controllerActions:
+           'ARM\Artwork\Controller\ArtworkController': ['show']
+      'ContestList':
+         label: 'List Contest'
+         controllerActions:
+           'ARM\Armcontest\Controller\ContestController': ['index']
+      'ContestShow':
+         label: 'Show Contest'
+         controllerActions:
+           'ARM\Artwork\Controller\ContestController': ['show']

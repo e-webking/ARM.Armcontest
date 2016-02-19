@@ -1,7 +1,7 @@
 
 -
   name: 'Homepage'
-  uriPattern: ''
+  uriPattern: 'armcontest'
   defaults:
     '@package': 'ARM.Armcontest'
     '@controller': 'Standard'
@@ -10,7 +10,7 @@
 
 -
    name: 'Artwork'
-   uriPattern: 'artworks/<ArtSubRoutes>'
+   uriPattern: 'armcontest/artworks/<ArtSubRoutes>'
    defaults:
      '@package': 'ARM.Armcontest'
      '@controller': 'Artwork'
@@ -23,7 +23,7 @@
 
 -
    name: 'Contest'
-   uriPattern: 'contest/<ContestSubRoutes>'
+   uriPattern: 'armcontest/contest/<ContestSubRoutes>'
    defaults:
      '@package':    'ARM.Armcontest'
      '@controller': 'Contest'

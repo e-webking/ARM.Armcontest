@@ -1,0 +1,6 @@
+prototype(ARM.Armcontest:Contest) < prototype(TYPO3.Neos:Plugin)
+prototype(ARM.Armcontest:Contest) {
+     package = 'ARM.Armcontest'
+     controller = 'Standard'
+     action = 'index'
+}

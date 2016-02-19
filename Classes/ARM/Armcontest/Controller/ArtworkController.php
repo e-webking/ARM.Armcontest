@@ -13,11 +13,14 @@ class ArtworkController extends \TYPO3\Flow\Mvc\Controller\ActionController
     /**
      * @return void
      */
-    public function indexAction()
+    public function listAction()
     {
-        $this->view->assign('foos', array(
-            'bar', 'baz'
-        ));
+        
+    }
+    
+    public function showAction()
+    {
+    	
     }
 
 }
