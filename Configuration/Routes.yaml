@@ -9,19 +9,6 @@
     '@format': 'html'
 
 -
-  name: 'Login'
-  uriPattern: '<LoginSubRoutes>'
-  defaults:
-    '@package': 'ARM.Armcontest'
-    '@controller': 'Login'
-    '@action': 'index'
-    '@format': 'html'
-  subRoutes:
-    'LoginSubRoutes':
-      package: 'ARM.Armcontest'
-      suffix: 'Login'
-
--
    name: 'Artwork'
    uriPattern: 'artworks/<ArtSubRoutes>'
    defaults:
