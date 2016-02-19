@@ -1,13 +1,14 @@
 privilegeTargets:
   TYPO3\Flow\Security\Authorization\Privilege\Method\MethodPrivilege:
-    'ARM.Armcontest:StandardControllerActions':
-      matcher: 'method(ARM\Armcontest\Controller\StandardController->(index)Action())'
+    'ARM.Armcontest:Contest':
+      matcher: 'method(ARM\Armcontest\Controller\StandardController->(index)Action()) || method(ARM\Armcontest\Controller\ArtworkController->(index|list|show)Action()) || method(ARM\Armcontest\Controller\ContestController->(index|list|show)Action())'
 
 roles:
   'TYPO3.Flow:Everybody':
     privileges:
       -
-        privilegeTarget: 'ARM.Armcontest:StandardControllerActions'
+        privilegeTarget: 'ARM.Armcontest:Contest'
         permission: GRANT
+        
   'ARM.Armcontest:Visitor': []
   'ARM.Armcontest:User': []
