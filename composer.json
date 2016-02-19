@@ -1,0 +1,15 @@
+{
+    "name": "arm/armcontest",
+    "type": "typo3-flow-package",
+    "description": "Kickstart package for Neos",
+    "require": {
+        "typo3/flow": "*",
+        "typo3/media": "^2.1",
+        "typo3/party": "^3.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "ARM\\Armcontest": "Classes"
+        }
+    }
+}
